@@ -1,6 +1,5 @@
-#!/bin/bash
 #include <stdio.h>
- /** usig the "puts"
+ /** usig the put funtion
   * instead of printf
   */
 int main(void)
