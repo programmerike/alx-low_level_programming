@@ -5,6 +5,7 @@
  * and print the last digit of the number stored in the variable n
  * Return: Always 0 (Sucess)
  */
+#include <stdio.h>
 int main(void)
 {
 int n;
