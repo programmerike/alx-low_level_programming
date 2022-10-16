@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	char letter;
-for (letter = 'a'; letter <= 'z'; letter++)
-	putchar(letter);
+	char lowerCase;
+for (lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
+	putchar(lowerCase);
 	putchar('\n');
 	return (0);
 }
