@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_alphabet - Make the alphabet
+ * print_alphabet_x10 - Make the alphabet
  *
  * Return: void
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char lowerCase;
 	int i = 0;
