@@ -9,6 +9,7 @@ void print_alphabet(void)
 	int lowerCase;
 
 	for (lowerCase = 'a'; lowerCase <= 'z'; lowerCase++)
+
 	{
 		putchar(lowerCase);
 	}
