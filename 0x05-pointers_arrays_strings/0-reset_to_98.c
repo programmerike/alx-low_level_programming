@@ -1,4 +1,4 @@
-#include "main.h"
+#include "unistd.h"
 
 /**
   * reset_to_98 - Updates the value of n to 98
