@@ -1,22 +1,34 @@
-#include "main.h"
+ #include "main.h"
 
 /**
- * _strncat - Copies @n bytes from the memory area pointed
- *           to by @src into that pointed to by @dest.
- * @dest: A pointer to the memory area to copy @src into.
- * @src: The source buffer to copy characters from.
- * @n: The number of bytes to copy from @src.
- *
- * Return: A pointer to the destination buffer @dest.
+ * _strncat - a function that concatenates two strings.
+ * @dest: an input string
+ * @src: an input string
+ * @n: an input integer
+ * Return: A pointer to the resulting string
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	unsigned int index;
-	unsigned char *destination = dest;
-	const unsigned char *source = src;
+	int srclen = 0, i = 0;
+	char *temp = dest, *start = src;
 
-	for (index = 0; index < n; index++)
-		destination[index] = source[index];
+	while (*src)
+	{
+		srclen++;
+		src++;
+	}
 
-	return (dest);
+	while (*dest)
+		dest++;
+
+	if (n > srclen)
+		n = srclen;
+
+	src = start;
+
+	for (; i < n; i++)
+		*dest++ = *src++;
+
+	*dest = '\0';
+	return (temp);
 }
