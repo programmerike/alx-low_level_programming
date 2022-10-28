@@ -8,18 +8,23 @@
   */
 void print_number(int n)
 {
-	unsigned int x;
+if (n < 0) {
+       putchar('-');
+       n = -n;
+   }
 
-	if (n < 0)
-	{
-		_putchar('-');
-		n *= -1;
-	}
+   if (n == 0)
+      putchar('0');
 
-	x = n;
+   if (n/10)
+      print_number(n/10);
 
-	if (x / 10)
-		print_number(x / 10);
+   putchar(n%10 + '0');
+}
 
-	_putchar(x % 10 + '0');
+int main(int argc, char** argv)
+{
+   int n = atoi(argv[1]);
+   print_number(n);
+   printf("\n");
 }
